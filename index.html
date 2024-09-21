@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form id="registrationForm">
+                <h1 class="my-4">Registration Form</h1>
+                <div class="form-group">
+                    <i class='bx bxs-user'></i>
+                    <input type="text"  id="fullName" placeholder="Full Name" required>
+                    <small class="form-text text-danger" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <i class='bx bxs-envelope'></i>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <small class="form-text text-danger" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <i class='bx bxs-phone'></i>
+                    <input type="text"  id="phone" placeholder="Phone Number" required>
+                    <small class="form-text text-danger" id="phoneError"></small>
+                </div>
+                <div class="form-group">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password"  id="password" placeholder="Password" required>
+                    <small class="form-text text-danger" id="passwordError"></small>
+                </div>
+                <div class="form-group">
+                    <i class='bx bxs-lock-alt'></i>
+                    <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+                    <small class="form-text text-danger" id="confirmPasswordError"></small>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+                <div class="group">
+                    <span><a href="#">Forget-Password</a></span>
+                    <span><a href="#">Login</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
